@@ -1192,11 +1192,13 @@ body {
 
 .navigation-wrapper {
   width: 100%;
-  padding: 2em 0 0;
+  padding: 1em 0 0;
   margin: 0 auto;
+  margin-bottom: 2em;
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  background-color: #111111;
   *zoom: 1;
 }
 
@@ -1219,6 +1221,16 @@ body {
 
 .navigation-wrapper:after {
   clear: both;
+}
+
+.navigation-wrapper a {
+  color: #bfbfbf;
+  border-bottom: 0 solid transparent;
+}
+
+.navigation-wrapper a:hover {
+  color: #ffffff;
+  border-bottom: 0 solid transparent;
 }
 
 .site-name {
@@ -1657,7 +1669,7 @@ body {
 
 .footer-wrap {
   width: 100%;
-  padding-top: 2em;
+  padding-top: 3em;
   padding-bottom: 3em;
   margin: 0 auto;
   margin-top: 1em;

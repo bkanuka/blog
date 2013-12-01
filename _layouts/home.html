@@ -8,11 +8,8 @@
 </head>
 
 <body class="home" itemscope itemtype="http://schema.org/WebPage">
-
 {% include browser-upgrade.html %}
-
 {% include navigation.html %}
-
 {% if page.image.feature %}<div class="image-wrap">
   <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
   {% if page.image.credit %}<span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>{% endif %}

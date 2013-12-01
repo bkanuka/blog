@@ -5,27 +5,37 @@ body {
 }
 .navigation-wrapper {
 	.container();
-	padding: 2em 0 0;
+	padding: 1em 0 0;
 	font-family: @heading-font;
 	font-weight: 700;
 	text-transform: uppercase;
+	background-color: @black;
+	margin-bottom: 2em;
 	.clearfix();
+	a {
+		border-bottom: 0 solid transparent;
+		color: darken(@white, 25);
+		&:hover {
+			color: @white;
+			border-bottom: 0 solid transparent;
+		}
+	}
 }
 .site-name {
 	.grid(12,10);
 	.prefix(12,1);
 	.suffix(12,1);
-	margin-bottom: 1em;
 	float: none;
 	display: block;
+	margin-bottom: 1em;
 }
 .top-navigation {
 	.grid(12,10);
 	.prefix(12,1);
 	.suffix(12,1);
-	margin-bottom: 1em;
 	float: none;
 	display: block;
+	margin-bottom: 1em;
 }
 .top-navigation {
 	ul {
@@ -294,7 +304,7 @@ body {
 	.clearfix();
 	clear: both;
 	margin-top: 1em;
-	padding-top: 2em;
+	padding-top: 3em;
 	padding-bottom: 3em;
 	background-color: @black;
 	a,
