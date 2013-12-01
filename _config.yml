@@ -1,19 +1,19 @@
-title:            Site Title
-tagline:          A short tagline
-description:      Describe your website.
+title:            "[Working Title]"
+tagline:          Learning to do things the right way, one project at a time
+description:      Shallow dives into math and software
 #Comment out url when working locally to resolve base urls correctly
-#url:              http://bkanuka.github.io
+url:              http://bkanuka.github.io
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Bennett Kanuka
   avatar:         bio-photo.jpg
-  bio:            "Describe your self."
-  email:          your@email.com
+  bio:            "Entrepreneur and Mathematician with an interest in open source software"
+  email:          bkanuka@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  #  twitter:        
+  #twitter:        
   #facebook:       
-  #github:         
+  github:        https://bkanuka.github.com 
   #linkedin:       
   #instagram:      
   #lastfm:         
@@ -34,14 +34,14 @@ links:
     url: /about
   - title: Articles
     url: /articles
-  - title: Theme Setup
-    url: /theme-setup
-  - title: Made Mistakes
-    url: http://mademistakes.com
-    external: true
+#  - title: Theme Setup
+#    url: /theme-setup
+#  - title: Made Mistakes
+#    url: http://mademistakes.com
+#    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    America/Toronto
 future:      true
 pygments:    true
 markdown:    kramdown
