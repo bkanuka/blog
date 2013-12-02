@@ -14,7 +14,7 @@ Mathematica on the other hand, came with a [reference notebook](http://library.w
 
 I solved the equations in Mathematica, but needed to use the resulting equations in Python code. I saved the notebook as a text file and the output it generated was something like this (trimmed):
     {% raw %}
-    {{x[t]->1/(-1+Subscript[r, 1])^3 E^(-t-t Subscript[r, 1]) (-E^t s+E^(t+t Subscript[r, 1]) s-E^(t Subscript[r, 1]) t v-E^(t Subscript[r, 1]) y-E^(t Subscript[r, 1]) t y+E^t s Subscript[r, 1]+2 E^(t Subscript[r, 1]) s Subscript[r, 1]-3 E^(t+t Subscript[r, 1]) s Subscript[r, 1]+E^(t Subscript[r, 1]) s t Subscript[r, 1]+3 E^(t Subscript[r, 1]) t v Subscript[r, 1]+...
+    {x[t]->1/(-1+Subscript[r, 1])^3 E^(-t-t Subscript[r, 1]) (-E^t s+E^(t+t Subscript[r, 1]) s-E^(t Subscript[r, 1]) t v-E^(t Subscript[r, 1]) y-E^(t Subscript[r, 1]) t y+E^t s Subscript[r, 1]+2 E^(t Subscript[r, 1]) s Subscript[r, 1]-3 E^(t+t Subscript[r, 1]) s Subscript[r, 1]+E^(t Subscript[r, 1]) s t Subscript[r, 1]+3 E^(t Subscript[r, 1]) t v Subscript[r, 1]+...
     {% endraw %}
 
 To convert this long equation to Python code, I wrote the following Perl script:
