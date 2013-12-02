@@ -31,8 +31,8 @@ $v = "v0";
 
 while (<>) {
     s/[^!-~\s]//g; #strip non-ascii characters
-    s/{{x\[t\]->//g;
-    s/}}//g;
+    s/\{\{x\[t\]->//g;
+    s/\}\}//g;
     s/\\.?\n//g;
     s/\+\n/\+/g;
     s/\-\n/\-/g;
