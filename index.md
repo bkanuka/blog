@@ -13,7 +13,7 @@ tags: [Home, status, code, blog, foss]
 
 <script>
 $.getJSON("http://libre.fm/2.0/?method=user.getrecenttracks&user=bkanuka&page=1&limit=1&format=json&callback=?", function(recent){
-        document.getElementById("track_title").innerHTML = recent.recenttracks.track.name; 
-        document.getElementById("track_artist").innerHTML = recent.recenttracks.track.artist["#text"]; 
+        document.getElementById("track_title").innerHTML = recent.recenttracks.track[0].name; 
+        document.getElementById("track_artist").innerHTML = recent.recenttracks.track[0].artist["#text"]; 
 });
 </script>
