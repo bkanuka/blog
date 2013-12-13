@@ -11,7 +11,7 @@ I use mutt to write my emails, and offlineimap to sync mail between my local mac
 offlineimap is buggy. 
 I tried very hard to convince myself that wasn't the case, but after using it for a few months, I had to face the truth.
 I'm sure it's not completely the offlineimap developers' faults, but rather the fact that they must support a seemingly infinite combination of partial IMAP implementations.
-What I mean by that, is almost every mail carrier supports IMAP, but you'd be very hard pressed to one that implements everything to specification (outside of building your own).
+What I mean by that, is almost every mail carrier supports IMAP, but you'd be very hard pressed to find one that implements everything to specification (outside of building your own).
 
 Anyway, the main issues I found with offlineimap all had to do with offlineimap keeping the connection open.
 I'm not sure exactly what the problem is, but I think it had to do with a spotty connection, timeouts, and things like that.
