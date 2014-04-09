@@ -1,6 +1,7 @@
 ---
+layout: post
 title: Drawing a Pentagon in LaTeX
-description: 
+description: Using TikZ to draw a pentagon
 modified: 2012-03-30
 category: articles
 tags: [math, latex]
