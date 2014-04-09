@@ -9,12 +9,11 @@ tags: [math, latex]
 
 I needed to draw a pentagon for a paper on Galois theory I'm working on. After some research, this is what I have come up with: 
 <figure>
-    <img src="/images/drawing-a-pentagon-in-latex/penta.png">
+    <img src="/images/2012-03-30-drawing-a-pentagon-in-latex/penta.png">
 </figure>
 
 In the header we use TikZ: 
-{% highlight latex %}    
-\usepackage{tikz}
+{% highlight latex %}\usepackage{tikz}
 {% endhighlight %}
 
 and then draw the pentagon with the following: 
