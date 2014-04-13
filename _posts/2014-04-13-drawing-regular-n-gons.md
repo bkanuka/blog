@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Drawing Regular n-gons with Horizontal Bottom
 description: 
 modified: 2014-04-13
