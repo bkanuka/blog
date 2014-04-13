@@ -16,7 +16,7 @@ The corrdinates of any point on the circle are given by:
 
 $$
 \begin{align*}
-x &= \cos (t)
+x &= \cos (t) \\
 y &= \sin (t)
 \end{align*}
 $$
@@ -25,7 +25,7 @@ Therefore we can find the coordinates of the regular n-gon at:
 
 $$
 \begin{align*}
-x &= \cos (k \frac{2 \pi}{n})
+x &= \cos (k \frac{2 \pi}{n}) \\
 y &= \sin (k \frac{2 \pi}{n}) \quad \text{where } k = 0, 1, \ldots n
 \end{align*}
 $$
@@ -35,13 +35,13 @@ To the above formula, we can apply a starting angle $$t$$ measured from the x-ax
 
 $$
 \begin{align*}
-x &= \cos (t + k \frac{2 \pi}{n})
+x &= \cos (t + k \frac{2 \pi}{n}) \\
 y &= \sin (t + k \frac{2 \pi}{n})
 \end{align*}
 $$
 
 Changing $$t$$ will rotate the n-gon's starting vertex.
-To garuntee the bottom edge is horizontal, we rotate the starting vertex to the bottom of the unit circle, and then one half of $$ \frac{2 \pi}{n}, or $$ t = \frac{-\pi}{2} + \frac{1}{2}\frac{2 \pi}{n} = \frac{-\pi}{2} + \frac{\pi}{n} $$
+To garuntee the bottom edge is horizontal, we rotate the starting vertex to the bottom of the unit circle, and then one half of $$ \frac{2 \pi}{n} $$, or $$ t = \frac{-\pi}{2} + \frac{1}{2}\frac{2 \pi}{n} = \frac{-\pi}{2} + \frac{\pi}{n} $$
 
 and then draw the pentagon with the following: 
     
