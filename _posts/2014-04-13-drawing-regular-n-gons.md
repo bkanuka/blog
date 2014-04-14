@@ -41,12 +41,37 @@ y &= \sin (t + k \frac{2 \pi}{n})
 $$
 
 Changing $$t$$ will rotate the n-gon's starting vertex.
-To garuntee the bottom edge is horizontal, we rotate the starting vertex to the bottom of the unit circle, and then one half of $$ \frac{2 \pi}{n} $$, or $$ t = \frac{-\pi}{2} + \frac{1}{2}\frac{2 \pi}{n} = \frac{-\pi}{2} + \frac{\pi}{n} $$
+To garuntee the bottom edge is horizontal, we rotate the starting vertex to the bottom of the unit circle, and then one half of $$ \frac{2 \pi}{n} $$, or 
 
-and then draw the pentagon with the following: 
-    
-{% highlight latex %}    
-import numpy as np
+$$ t = \frac{-\pi}{2} + \frac{1}{2}\frac{2 \pi}{n} = \frac{-\pi}{2} + \frac{\pi}{n} $$
+
+$$
+\begin{align*}
+x &= \cos (\frac{-\pi}{2} + \frac{\pi}{n} + k \frac{2 \pi}{n}) \\
+y &= \sin (\frac{-\pi}{2} + \frac{\pi}{n} + k \frac{2 \pi}{n})
+\end{align*}
+$$
+
+And using the trig identities,
+
+$$
+\begin{align*}
+\cos (\frac{-\pi}{2} + \theta) &= \cos (-(\frac{\pi}{2} - \theta)) &= \cos (\frac{\pi}{2} - \theta) &= \sin (\theta) \\
+\sin (\frac{-\pi}{2} + \theta) &= \sin (-(\frac{\pi}{2} - \theta)) &= - \sin (\frac{\pi}{2} - \theta) &= - \cos (\theta)
+\end{align*}
+$$
+
+we can simplify the equations to:
+
+$$
+\begin{align*}
+x &= \sin (\frac{\pi}{n} + k \frac{2 \pi}{n}) \\
+y &= - \cos (\frac{\pi}{n} + k \frac{2 \pi}{n})
+\end{align*}
+$$
+
+
+{% highlight python %}import numpy as np
 
 def ngon(n):
     x = [np.sin(np.pi/n + (k*2*np.pi)/n) for k in range(n+1)]
@@ -54,4 +79,3 @@ def ngon(n):
     return x,y
 {% endhighlight %}
 
-Hope this helps!
