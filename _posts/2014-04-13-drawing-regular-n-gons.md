@@ -62,13 +62,13 @@ And using the trig identities,
 $$
 \begin{align*}
 \cos \left(\frac{-\pi}{2} + \theta\right) 
-    &= \cos \left(-\left(\frac{\pi}{2} - \theta\right)\right) 
-    &= \cos \left(\frac{\pi}{2} - \theta\right) 
-    &= \sin (\theta) \\
+    = \cos \left(-\left(\frac{\pi}{2} - \theta\right)\right) 
+    = \cos \left(\frac{\pi}{2} - \theta\right) 
+    = \sin (\theta) \\
 \sin \left(\frac{-\pi}{2} + \theta\right) 
-    &= \sin \left(-\left(\frac{\pi}{2} - \theta\right)\right) 
-    &= -\sin \left(\frac{\pi}{2} - \theta\right) 
-    &= -\cos (\theta)
+    = \sin \left(-\left(\frac{\pi}{2} - \theta\right)\right) 
+    = -\sin \left(\frac{\pi}{2} - \theta\right) 
+    = -\cos (\theta)
 \end{align*}
 $$
 
