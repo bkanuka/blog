@@ -12,7 +12,7 @@ I also didn't generalize the solution to drawing n-gons.
 I would like to correct those issues.
 
 We start with the unit circle centered at (0,0).
-The corrdinates of any point on the circle are given by:
+The coordinates of any point on the circle are given by:
 
 $$
 \begin{align*}
@@ -30,7 +30,7 @@ y &= \sin \left(k \frac{2 \pi}{n}\right) \quad \text{where } k = 0, 1, \ldots n
 \end{align*}
 $$
 
-However, this does not garuntee that the n-gon's bottom edge will be horizontal (something we'd want for a visually pleasing drawing).
+However, this does not guarantee that the n-gon's bottom edge will be horizontal (something we'd want for a visually pleasing drawing).
 To the above formula, we can apply a starting angle $$t$$ measured from the x-axis.
 
 $$
@@ -41,7 +41,7 @@ y &= \sin \left(t + k \frac{2 \pi}{n}\right)
 $$
 
 Changing $$t$$ will rotate the n-gon's starting vertex.
-To garuntee the bottom edge is horizontal, we rotate the starting vertex to the bottom of the unit circle, and then one half of $$ \frac{2 \pi}{n} $$, or 
+To guarantee the bottom edge is horizontal, we rotate the starting vertex to the bottom of the unit circle, and then one half of $$ \frac{2 \pi}{n} $$, or 
 
 $$
 \begin{align*}
@@ -62,11 +62,11 @@ And using the trig identities,
 $$
 \begin{align*}
 \cos \left(\frac{-\pi}{2} + \theta\right) 
-    = \cos \left(-\left(\frac{\pi}{2} - \theta\right)\right) 
+    &= \cos \left(-\left(\frac{\pi}{2} - \theta\right)\right) 
     = \cos \left(\frac{\pi}{2} - \theta\right) 
     = \sin (\theta) \\
 \sin \left(\frac{-\pi}{2} + \theta\right) 
-    = \sin \left(-\left(\frac{\pi}{2} - \theta\right)\right) 
+    &= \sin \left(-\left(\frac{\pi}{2} - \theta\right)\right) 
     = -\sin \left(\frac{\pi}{2} - \theta\right) 
     = -\cos (\theta)
 \end{align*}
