@@ -25,8 +25,8 @@ Therefore we can find the coordinates of the regular n-gon at:
 
 $$
 \begin{align*}
-x &= \cos (k \frac{2 \pi}{n}) \\
-y &= \sin (k \frac{2 \pi}{n}) \quad \text{where } k = 0, 1, \ldots n
+x &= \cos \left(k \frac{2 \pi}{n}\right) \\
+y &= \sin \left(k \frac{2 \pi}{n}\right) \quad \text{where } k = 0, 1, \ldots n
 \end{align*}
 $$
 
@@ -35,20 +35,25 @@ To the above formula, we can apply a starting angle $$t$$ measured from the x-ax
 
 $$
 \begin{align*}
-x &= \cos (t + k \frac{2 \pi}{n}) \\
-y &= \sin (t + k \frac{2 \pi}{n})
+x &= \cos \left(t + k \frac{2 \pi}{n}\right) \\
+y &= \sin \left(t + k \frac{2 \pi}{n}\right)
 \end{align*}
 $$
 
 Changing $$t$$ will rotate the n-gon's starting vertex.
 To garuntee the bottom edge is horizontal, we rotate the starting vertex to the bottom of the unit circle, and then one half of $$ \frac{2 \pi}{n} $$, or 
 
-$$ t = \frac{-\pi}{2} + \frac{1}{2}\frac{2 \pi}{n} = \frac{-\pi}{2} + \frac{\pi}{n} $$
+$$
+\begin{align*}
+t &= \frac{-\pi}{2} + \frac{1}{2}\frac{2 \pi}{n} \\
+  &= \frac{-\pi}{2} + \frac{\pi}{n}
+\end{align*}
+$$
 
 $$
 \begin{align*}
-x &= \cos (\frac{-\pi}{2} + \frac{\pi}{n} + k \frac{2 \pi}{n}) \\
-y &= \sin (\frac{-\pi}{2} + \frac{\pi}{n} + k \frac{2 \pi}{n})
+x &= \cos \left(\frac{-\pi}{2} + \frac{\pi}{n} + k \frac{2 \pi}{n}\right) \\
+y &= \sin \left(\frac{-\pi}{2} + \frac{\pi}{n} + k \frac{2 \pi}{n}\right)
 \end{align*}
 $$
 
@@ -56,8 +61,14 @@ And using the trig identities,
 
 $$
 \begin{align*}
-\cos (\frac{-\pi}{2} + \theta) &= \cos (-(\frac{\pi}{2} - \theta)) &= \cos (\frac{\pi}{2} - \theta) &= \sin (\theta) \\
-\sin (\frac{-\pi}{2} + \theta) &= \sin (-(\frac{\pi}{2} - \theta)) &= - \sin (\frac{\pi}{2} - \theta) &= - \cos (\theta)
+\cos \left(\frac{-\pi}{2} + \theta\right) 
+    &= \cos \left(-\left(\frac{\pi}{2} - \theta\right)\right) 
+    &= \cos \left(\frac{\pi}{2} - \theta\right) 
+    &= \sin (\theta) \\
+\sin \left(\frac{-\pi}{2} + \theta\right) 
+    &= \sin \left(-\left(\frac{\pi}{2} - \theta\right)\right) 
+    &= -\sin \left(\frac{\pi}{2} - \theta\right) 
+    &= -\cos (\theta)
 \end{align*}
 $$
 
@@ -65,8 +76,8 @@ we can simplify the equations to:
 
 $$
 \begin{align*}
-x &= \sin (\frac{\pi}{n} + k \frac{2 \pi}{n}) \\
-y &= - \cos (\frac{\pi}{n} + k \frac{2 \pi}{n})
+x &= \sin \left(\frac{\pi}{n} + k \frac{2 \pi}{n}\right) \\
+y &= - \cos \left(\frac{\pi}{n} + k \frac{2 \pi}{n}\right)
 \end{align*}
 $$
 
