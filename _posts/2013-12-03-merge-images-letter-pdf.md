@@ -23,6 +23,7 @@ First, I resized the images to something reasonable using `convert` (they were i
 {% highlight bash %}convert page* -resize 50% -format jpg page.jpg
 {% endhighlight %}
 This created files `page-0.jpg` through `page-4.jpg` with smaller sizes.
+
 Then I wrote the following script, which I called `img2pdf` which takes images files as arguments and converts to PDF.
 Save the GitHub gist to a file and mark it as executable.
 `img2pdf -h` has usage instructions, but it's simple enough to figure out.
