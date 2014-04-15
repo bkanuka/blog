@@ -42,4 +42,4 @@ An example output [trimmed]:
 {% endhighlight %}
 
 It may be worth nothing this is the first time I've used Perl. 
-There may be far better ways to do this, but I wanted an excuse to learn some perl.
+There may be far better ways to do this, but I wanted an excuse to learn some Perl.
