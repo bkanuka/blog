@@ -8,13 +8,14 @@ tags: [math, python, algorithm]
 ---
 
 The goal of this project was to "randomly" select numbers from a predefined set, with replacement, in a way that the mean of the selected numbers would equal (or come close to) a specified number.
-For example, and the original motivation, was to select 100 numbers from the set: $$ X = {0, 0.1, 0.25, 0.5, 0.75, 0.8, 1.0} $$
+For example, and the original motivation, was to select 100 numbers from the set: $$ X = \left{0, 0.1, 0.25, 0.5, 0.75, 0.8, 1.0\right} $$
 so that the mean of the selected numbers was $$ \approx 0.75 $$
 
-Said a different way, given $$ n \in \mathbf{N}, X = {x_1, x_2, \ldots, x_m} $$ and $$ \mu $$, find $$ a_1, a_2, \ldots, a_m \in \mathbf{N}$$ such that:
+Said a different way, given $$ n \in \mathbb{N}, X = \left{x_1, x_2, \ldots, x_m\right} $$ and $$ \mu $$, find $$ a_1, a_2, \ldots, a_m \in \mathbb{N}$$ such that:
 
 $$
 \frac{a_1 x_1 + a_2 x_2 + \ldots + a_m x_m}{a_1 + a_2 + \ldots + a_m} \approx \mu \quad \text{and} \\
+~\\
 a_1 + a_2 + \ldots + a_m = n
 $$
 
@@ -27,7 +28,7 @@ Therefore, it would be nice to have some sort of parameter that determined the "
 In order to solve both these issues, I decided to randomly select numbers from a probability distribution with finite support on $$ [\min(X), \max(X)] $$ and round to the nearest $$ x \in X $$.  
 Consider the [beta distribution](http://en.wikipedia.org/wiki/Beta_distribution) 
 
-$$ \frac{x^{\alpha-1}(1-x)^{\beta-1}}{\int_0^1 u^{\alpha-1} (1-u)^{\beta-1}\, du} $$
+$$ f(x;\alpha,\beta) = \frac{x^{\alpha-1}(1-x)^{\beta-1}}{\int_0^1 u^{\alpha-1} (1-u)^{\beta-1}\, du} $$
 
 where $$ \alpha > 0 $$ and $$ \beta > 0 $$.
 The beta distribution is a nice choice for this problem for two reasons. 
