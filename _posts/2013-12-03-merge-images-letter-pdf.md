@@ -1,6 +1,6 @@
 ---
 layout: post
-title: img2pdf: Merge and resize images into a PDF
+title: "img2pdf: Merge and resize images into a PDF"
 description: "Using LaTeX to merge images into a PDF"
 modified: 2014-04-15
 category: articles
@@ -8,7 +8,7 @@ tags: [latex, code, pdf]
 ---
 
 I was recently emailed a bunch of JPEG files of a scanned document.
-There was a file for ever page, and the image files were very large.
+There was a file for every page, and the image files were very large.
 I wanted to get them all in a single PDF file on letter size paper.
 Because I find PDF mystical and difficult to work with, I decided to stick to tools I know - and I know LaTeX.
 
