@@ -2,7 +2,7 @@
 layout: post
 title: Native Looking matplotlib Plots in LaTeX
 description: Making matplotlib plots look native to LaTeX
-modified: 2014-01-10
+modified: 2014-04-15
 category: articles
 tags: [latex, matplotlib, latex, tricks, script]
 ---
