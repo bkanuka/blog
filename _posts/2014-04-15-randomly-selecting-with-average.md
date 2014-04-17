@@ -15,11 +15,11 @@ Said a different way, given $$ n \in \mathbb{N}, X = \left\{x_1, x_2, \ldots, x_
 
 $$ \frac{a_1 x_1 + a_2 x_2 + \ldots + a_m x_m}{a_1 + a_2 + \ldots + a_m} \approx \mu \quad \text{and} \\
 ~\\
-a_1 + a_2 + \ldots + a_m = n
+\Sum_{i = 1}^m = n
 $$
 
 Now obviously, this isn't something that can be solved determinstically, and there might be many different ways of selecting our $$ a_i $$.
-For example, consider $$ X = [0, 0.5, 1.0] $$, $$ \mu = 0.5 $$, and $$ n = 20 $$.
+For example, consider $$ X = \left\{0, 0.5, 1.0\right\} $$, $$ \mu = 0.5 $$, and $$ n = 20 $$.
 We would be right to select 20 "0.5"s, or 10 "0"s and 10 "1.0"s.
 Both methods would create a mean exactly equal to 0.5.
 Therefore, it would be nice to have some sort of parameter that determined the "shape" of our selection, whether the selection was all from the extremes, or tightly grouped around the mean.
@@ -39,20 +39,3 @@ $$ \mu = \frac{\alpha}{\alpha + \beta} $$
 This means we can intellegently select $$ \alpha $$ and $$ \beta $$ (or select one and fix the other using the above), select random numbers, round to the nearest 
 
 {% gist 10692062 %}
-
-$$
-\begin{align*}
-x &= \sin \left(\frac{\pi}{n} + k \frac{2 \pi}{n}\right) \\
-y &= - \cos \left(\frac{\pi}{n} + k \frac{2 \pi}{n}\right)
-\end{align*}
-$$
-
-
-{% highlight python %}import numpy as np
-
-def ngon(n):
-    x = [np.sin(np.pi/n + (k*2*np.pi)/n) for k in range(n+1)]
-    y = [-1*np.cos(np.pi/n + (k*2*np.pi)/n) for k in range(n+1)]
-    return x,y
-{% endhighlight %}
-

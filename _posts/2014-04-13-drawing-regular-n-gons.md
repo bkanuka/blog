@@ -2,7 +2,7 @@
 layout: post
 title: Drawing Regular n-gons with Horizontal Bottom
 description: 
-modified: 2014-04-13
+modified: 2014-04-17
 category: articles
 tags: [math, python]
 ---
@@ -81,12 +81,25 @@ y &= - \cos \left(\frac{\pi}{n} + k \frac{2 \pi}{n}\right)
 \end{align*}
 $$
 
+If we are interested in drawing an n-gon with circumcircle of radius $$r$$, centered at $$(a,b)$$ 
+then we can simply multiply by $$r$$ and add an offset:
 
+$$
+\begin{align*}
+x &= a + r \sin \left(\frac{\pi}{n} + k \frac{2 \pi}{n}\right) \\
+y &= b - r \cos \left(\frac{\pi}{n} + k \frac{2 \pi}{n}\right)
+\end{align*}
+$$
+
+This is easily written as a Python function:
 {% highlight python %}import numpy as np
 
-def ngon(n):
-    x = [np.sin(np.pi/n + (k*2*np.pi)/n) for k in range(n+1)]
-    y = [-1*np.cos(np.pi/n + (k*2*np.pi)/n) for k in range(n+1)]
-    return x,y
+def ngon(n, r=1, a=0, b=0):
+    vertecies = []
+    for k in range(n):
+        x = a + r*np.sin(np.pi/n + (k*2*np.pi)/n)
+        y = b - r*np.cos(np.pi/n + (k*2*np.pi)/n)
+        vertecies.append((x,y),)
+    return vertecies
 {% endhighlight %}
 

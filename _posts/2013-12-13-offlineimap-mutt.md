@@ -35,7 +35,7 @@ done
 offlineimap > ~/mail-log 2>&1 &
 {% endhighlight %}
 
-Copy this script and save it as `~/bin/mail-sync` and give it execute permissions.
+Copy this script and save it as `~/bin/mail-sync` (or somewhere else in your path) and give it execute permissions.
 
 ## mail script
 I'd like to be able to open mutt and have offlineimap sync my mail in the background as long as mutt is open.
