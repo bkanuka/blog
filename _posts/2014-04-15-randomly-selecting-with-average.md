@@ -14,12 +14,12 @@ so that the mean of the selected numbers was $$ \approx 0.75 $$
 Said a different way, given $$ n \in \mathbb{N}, X = \left\{x_1, x_2, \ldots, x_m\right\} $$ and $$ \mu $$, find $$ a_1, a_2, \ldots, a_m \in \mathbb{N}$$ such that:
 
 $$ 
-\frac{1}{n}\sum_{i = 1}^m a_i x_i \approx \mu \quad \text{and} \\
-~\\
+\frac{1}{n}\sum_{i = 1}^m a_i x_i \approx \mu 
+\quad \text{and} \quad
 \sum_{i = 1}^m a_i = n
 $$
 
-Now obviously, this isn't something that can be solved determinstically, and there might be many different ways of selecting our $$ a_i $$.
+Now obviously, this isn't something that can be solved deterministically, and there might be many different ways of selecting our $$ a_i $$.
 For example, consider $$ X = \left\{0, 0.5, 1.0\right\} $$, $$ \mu = 0.5 $$, and $$ n = 20 $$.
 We would be right to select 20 "0.5"s, or 10 "0"s and 10 "1.0"s.
 Both methods would create a mean exactly equal to 0.5.
@@ -37,6 +37,6 @@ Second, it's mean is very easy to calculate.
 
 $$ \mu = \frac{\alpha}{\alpha + \beta} $$
 
-This means we can intellegently select $$ \alpha $$ and $$ \beta $$ (or select one and fix the other using the above), select random numbers, round to the nearest 
+This means we can intelligently select $$ \alpha $$ and $$ \beta $$ (or select one and fix the other using the above), select random numbers, round to the nearest $$x \in X $$ and the average should be pretty close to $$ \mu $$. This turned out to be good enough for my purposes, and the program to do this is written below.
 
 {% gist 10692062 %}
