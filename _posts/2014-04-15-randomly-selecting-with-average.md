@@ -13,9 +13,10 @@ so that the mean of the selected numbers was $$ \approx 0.75 $$
 
 Said a different way, given $$ n \in \mathbb{N}, X = \left\{x_1, x_2, \ldots, x_m\right\} $$ and $$ \mu $$, find $$ a_1, a_2, \ldots, a_m \in \mathbb{N}$$ such that:
 
-$$ \frac{a_1 x_1 + a_2 x_2 + \ldots + a_m x_m}{a_1 + a_2 + \ldots + a_m} \approx \mu \quad \text{and} \\
+$$ 
+\frac{1}{n}\sum_{i = 1}^m a_i x_i \approx \mu \quad \text{and} \\
 ~\\
-\sum_{i = 1}^m = n
+\sum_{i = 1}^m a_i = n
 $$
 
 Now obviously, this isn't something that can be solved determinstically, and there might be many different ways of selecting our $$ a_i $$.
