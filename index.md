@@ -6,10 +6,10 @@ tags: [Home, status, code, blog, foss]
 
 ### Current Stats
 
-| **Reading** | The Life, The Universe, and Everything -- Douglas Adams|
-| **Phone** | HTC One M7 |
-| **Language** | Bash |
-| **Last Song** |<span id="track_title"></span> -- <span id="track_artist"></span>|
+| **Reading** | [Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers) -- [Cam Davidson-Pilon](http://www.statly.ca/)|
+| **Learning** | iPython |
+| **Hacking** | HTC One M7 |
+| **Listening** |<span id="track_title"></span> -- <span id="track_artist"></span>|
 
 <script>
 $.getJSON("http://libre.fm/2.0/?method=user.getrecenttracks&user=bkanuka&page=1&limit=1&format=json&callback=?", function(recent){
