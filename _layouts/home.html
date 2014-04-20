@@ -28,7 +28,6 @@
     <p itemprop="text">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
   </article>
   {% endfor %}
-  <h3 itemprop="headline"><a href="{{ site.url }}/articles">More...</a></h3>
   {{ content }}
 </div><!-- /#index -->
 
