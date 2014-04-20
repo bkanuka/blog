@@ -6,9 +6,9 @@ tags: [Home, status, code, blog, foss]
 
 ### Current Stats
 
-| **Fiction Reading** | The Life, The Universe, and Everything -- Douglas Adams|
-| **Cell Phone** | HTC One -- Google Play Edition |
-| **Learning Language** | Bash |
+| **Reading** | The Life, The Universe, and Everything -- Douglas Adams|
+| **Phone** | HTC One M7 |
+| **Language** | Bash |
 | **Last Song** |<span id="track_title"></span> -- <span id="track_artist"></span>|
 
 <script>
