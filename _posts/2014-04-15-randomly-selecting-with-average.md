@@ -33,7 +33,7 @@ $$ f(x;\alpha,\beta) = \frac{x^{\alpha-1}(1-x)^{\beta-1}}{\int_0^1 u^{\alpha-1} 
 where $$ \alpha > 0 $$ and $$ \beta > 0 $$.
 The beta distribution is a nice choice for this problem for two reasons. 
 First is because of its finite support on the interval $$ [0, 1] $$.
-Second, it's mean is very easy to calculate.
+Second, its mean is very easy to calculate.
 
 $$ \mu = \frac{\alpha}{\alpha + \beta} $$
 
