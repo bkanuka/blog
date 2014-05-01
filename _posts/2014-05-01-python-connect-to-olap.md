@@ -4,7 +4,6 @@ description: Using Python run MDX or XMLA against Microsoft SSAS in Linux
 modified: 2014-05-01
 layout: post
 category: articles
-tags: [python, linux, olap, mdx, xmla]
 ---
 
 I have a Linux machine I'd like to run regular QA against different data sets.
