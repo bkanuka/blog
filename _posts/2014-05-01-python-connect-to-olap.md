@@ -1,7 +1,7 @@
 ---
 title: Connect to OLAP with Python
 description: Using Python run MDX or XMLA against Microsoft SSAS in Linux
-modified: 2014-04-15
+modified: 2014-05-01
 layout: post
 category: articles
 tags: [python, linux, olap, mdx, xmla]
@@ -27,4 +27,5 @@ No need to install from github though; it can be installed by simply running `pi
 
 After `olap.xmla` is installed, you should be able to follow the documentation at [the github page](https://github.com/may-day/olap).
 Below is an example specifically for connecting to a Microsoft SSAS OLAP:
+
 {% gist 11458189 %}
