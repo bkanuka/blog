@@ -1449,8 +1449,8 @@ article img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   border-width: 0;
   -ms-interpolation-mode: bicubic;
 }
