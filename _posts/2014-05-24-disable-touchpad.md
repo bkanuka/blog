@@ -17,4 +17,4 @@ Plus, more than anything, I liked the challenge.
 
 All of the solutions I found of Google were inadequate for one reason or another, so I decided to craft my own.
 
-{% gist 96ace515f8226103bce5 %}
+{% gist b4c6a8f5ec09a7ef73c2 %}
