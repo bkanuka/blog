@@ -1449,6 +1449,7 @@ article img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
+  margin: 50em;
   border-width: 0;
   -ms-interpolation-mode: bicubic;
 }
