@@ -17,4 +17,4 @@ Plus, more than anything, I liked the challenge.
 
 All of the solutions I found of Google were inadequate for one reason or another, so I decided to craft my own.
 
-{% gist 11458189b %}
+{% gist bkanuka/b7b4ca94deb237b1e3f6 %}
