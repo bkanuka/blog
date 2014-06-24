@@ -20,10 +20,10 @@ All of the solutions I found of Google were inadequate for one reason or another
 
 {% gist bkanuka/71741fc477f923054ef4 %}
 
-To make this work for you, you'll have to set he global variables `TRACKPOINT_NAME` and `TRACKPAD_NAME`.
-Run `xinput --list --name-only` to list the names of your attached input devices.
+After saving the above gist, you'll have to set the global variables `TRACKPOINT_NAME` and `TRACKPAD_NAME`.
+Run `xinput --list --name-only` to list the names of your attached input devices, and copy the name from there exactly.
 
-To check if a device is in use, we use the program `xxd` to read a single byte from the raw input device.
+In the script, to check if a device is in use we use the program `xxd` to read a single byte from the raw input device.
 In order to do this we will make the `/dev/input` devices readable by the group `plugdev` (or any other group you belong to).
 **THIS IS NOT SECURE** because it will allow anyone belonging to `plugdev` to read raw events, and it would be trivial to create something like a keylogger.
 In my case, there are no other users of this laptop besides me, so I'm not too concerned about keylogging myself.
@@ -33,15 +33,18 @@ Create a file in called `/etc/udev/rules.d/99-input.rules` with the following co
     KERNEL=="event*", NAME="input/%k", MODE="660", GROUP="plugdev"
 
 After restarting your computer, the output of `ls -l /dev/input` should look something like this:
-    total 0
-    drwxr-xr-x 2 root root    120 Jun 23 07:37 by-id
-    drwxr-xr-x 2 root root    120 Jun 23 07:37 by-path
-    crw-r----- 1 root root 13, 64 Jun 19 18:31 event0
-    crw-r----- 1 root root 13, 65 Jun 19 18:31 event1
-    crw-r----- 1 root root 13, 66 Jun 19 18:31 event2
-    crw-r----- 1 root root 13, 67 Jun 23 07:37 event3
-    crw-r----- 1 root root 13, 68 Jun 23 07:37 event4
-    crw-r----- 1 root root 13, 69 Jun 19 18:31 event5
-    crw-r----- 1 root root 13, 63 Jun 19 18:31 mice
-    crw-r----- 1 root root 13, 32 Jun 19 18:31 mouse0
 
+    total 0
+    drwxr-xr-x 2 root plugdev    120 Jun 23 07:37 by-id
+    drwxr-xr-x 2 root plugdev    120 Jun 23 07:37 by-path
+    crw-r----- 1 root plugdev 13, 64 Jun 19 18:31 event0
+    crw-r----- 1 root plugdev 13, 65 Jun 19 18:31 event1
+    crw-r----- 1 root plugdev 13, 66 Jun 19 18:31 event2
+    crw-r----- 1 root plugdev 13, 67 Jun 23 07:37 event3
+    crw-r----- 1 root plugdev 13, 68 Jun 23 07:37 event4
+    crw-r----- 1 root plugdev 13, 63 Jun 19 18:31 mice
+    crw-r----- 1 root plugdev 13, 32 Jun 19 18:31 mouse0
+
+To make sure the script is executable, run `chmod +x trackpad-watcher.sh`.
+You may want to add the script to your startup. This can be different for every distro, so won't be covered here.
+If you have any issues, please don't hesitate to email me.
