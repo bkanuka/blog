@@ -18,4 +18,4 @@ Plus, more than anything, I liked the challenge.
 
 All of the solutions I found of Google were inadequate for one reason or another, so I decided to craft my own.
 
-{% gist bkanuka/b7b4ca94deb237b1e3f6 %}
+{% gist bkanuka/71741fc477f923054ef4 %}
