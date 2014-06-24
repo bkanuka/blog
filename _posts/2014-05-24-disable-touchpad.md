@@ -13,7 +13,7 @@ The following XKCD offers other possible naming conventions:
 ![Appropriate Name](http://imgs.xkcd.com/comics/appropriate_term.png)
 
 Maybe it's me, or maybe the configuration of my laptop (I'm actually on a Dell right now, not a Thinkpad) but whenever I use the Trackpoint mouse, I tend to tap the touchpad and make erronious clicks.
-In the past I've simply disabled the touchpad, which works for me, but tends to annoy anyone else who uses my laptop - even breifly.
+In the past I've simply disabled the touchpad, which works for me, but tends to annoy anyone else who uses my laptop - even briefly.
 Plus, more than anything, I liked the challenge.
 
 All of the solutions I found of Google were inadequate for one reason or another, so I decided to craft my own.
@@ -45,6 +45,6 @@ After restarting your computer, the output of `ls -l /dev/input` should look som
     crw-r----- 1 root plugdev 13, 63 Jun 19 18:31 mice
     crw-r----- 1 root plugdev 13, 32 Jun 19 18:31 mouse0
 
-To make sure the script is executable, run `chmod +x trackpad-watcher.sh`.
+To make sure the script is executable, run `sudo chmod +x trackpad-watcher.sh`.
 You may want to add the script to your startup. This can be different for every distro, so won't be covered here.
 If you have any issues, please don't hesitate to email me.
