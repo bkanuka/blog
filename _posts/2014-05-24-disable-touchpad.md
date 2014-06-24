@@ -30,10 +30,9 @@ In my case, there are no other users of this laptop besides me, so I'm not too c
 
 Create a file in called `/etc/udev/rules.d/99-input.rules` with the following content: 
 
-`KERNEL=="event*", NAME="input/%k", MODE="660", GROUP="plugdev"`
+    KERNEL=="event*", NAME="input/%k", MODE="660", GROUP="plugdev"
 
 After restarting your computer, the output of `ls -l /dev/input` should look something like this:
-
     total 0
     drwxr-xr-x 2 root root    120 Jun 23 07:37 by-id
     drwxr-xr-x 2 root root    120 Jun 23 07:37 by-path
