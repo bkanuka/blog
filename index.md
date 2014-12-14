@@ -6,8 +6,7 @@ tags: [Home, status, code, blog, foss]
 
 ### Current Stats
 
-| **Reading** | [Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers) -- [Cam Davidson-Pilon](http://www.statly.ca/)|
-| **Learning** | iPython |
+| **Learning** | [Scala](http://www.scala-lang.org/) |
 | **Hacking** | HTC One M7 |
 | **Listening** |<span id="track_title"></span> -- <span id="track_artist"></span>|
 
