@@ -36,7 +36,7 @@ BOLDstreet managed thousands of WiFi Hotspots for well-known companies in Canada
       * US20130167196 - System and method for remote device recognition at public hotspots
       * CA2823895 - System and method for wireless device detection, recognition and visit profiling
   * Improved a frequent SQL query which scanned 100+ million rows to require a single row lookup.
-  * Focused on improving the "additivity" of our most commonly used SQL queries. This allowed us to cache and reuse the results of previous queries (often making the difference between a taxing SQL query or a cache lookup).
+  * Focused on improving the "additivity" of our most commonly used SQL queries. This allowed us to cache and reuse the results of previous queries (often making the difference between a taxing SQL query and a cache lookup).
       * Time based queries were broken up and added using the Inclusion-Exclusion priciple.
       * Implemented a statistical estimator (98% accurate) that allowed the results of `COUNT UNIQUE` queries to be added. This eliminated the need for many costly SQL queries.
   * Created a program to predict the movement of devices on our network (based on PageRank).
