@@ -6,21 +6,20 @@ tagline:
 tags: [about]
 ---
 
-I use Math and Open Source tools to find solutions to difficult problems. My Math and Physics education gave me a strong base for data science; my love of computers and programming has allowed me to apply it.
+I use Math and Open Source tools to find solutions to difficult problems. My Math and Physics education gave me a strong base for data science; my love of computers and programming has allowed me to apply it. Sometimes I write about Linux, scripting languages, and things I find interesting outside of work.
 
 I have dual American and Canadian citizenship.
 
-Sometimes I write about Linux, scripting languages, and things I find interesting outside of work.
 
 # Resume
 
 ## Work Experience
 
-### **Data Analyst** - DataValet Technologies (July 2014 - Present)
+### **Data Analyst** - Datavalet Technologies (July 2014 - Present)
 
-In July 2014, DataValet acquired BOLDstreet and I was one of 6 retained as an employee. DataValet also manages WiFi Hotspots and collects about 10 times the amount of data as BOLDstreet.
+In July 2014, Datavalet acquired BOLDstreet and I was one of 6 retained as an employee. Datavalet also manages WiFi Hotspots and collects about 10 times the amount of data as BOLDstreet.
 
-  * Redesigned the data collection backend for all departments of DataValet, based on the Hadoop ecosystem.
+  * Redesigned the data collection backend for all departments of Datavalet, based on the Hadoop ecosystem.
       * Managed the roles and development plan for 4 team members.
       * The original design allows for collecting and analysing 50 GB of data per day, and is horizontally scalable.
       * While designing the system, I found that my design was similar to production systems at Twitter. I contacted engineers at Twitter who helped improve the design.
