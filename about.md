@@ -36,7 +36,7 @@ BOLDstreet managed thousands of WiFi Hotspots for well-known companies in Canada
   * Filed two patents regarding signal processing and estimating the location of a WiFi device using a single WiFi access point.
       * US20130167196 - System and method for remote device recognition at public hotspots
       * CA2823895 - System and method for wireless device detection, recognition and visit profiling
-  * Improved a common SQL query which required scanning 100+ million rows to require only a single row lookup.
+  * Improved a frequent SQL query which scanned 100+ million rows to require only a single row lookup.
   * Focused on improving the "additivity" of our most commonly used SQL queries. This allowed us to cache and reuse the results of previous queries (often making the difference between a taxing SQL query or a cache lookup).
       * Time based queries were broken up into discrete timeslices and added using the Inclusion-Exclusion priciple.
       * Implemented a statistical estimator (98% accurate) that allowed "unique count" queries to be added. E.g. the unique visitors to our hotspots for a week could be found by "summing" the unique visitors for each day.  This eliminated the need for costly `UNIQUE` SQL queries.
@@ -62,11 +62,13 @@ I have been using Linux since I was 9 years old and maintain a home server (VM's
 
 ### Notable Projects
 
-Groups of Irreducible Quintic Polynomials
+**Groups of Irreducible Quintic Polynomials**
 : Described a method of reducing quintic polynomials using the geometry of a five-point star.
-Groebner Basis Method of Automatic Theorem Proving
+
+**Groebner Basis Method of Automatic Theorem Proving**
 : Explained an algorithmic method for automatically proving geometric statements.
-Beta Deflection and Spectroscopy
+
+**Beta Deflection and Spectroscopy**
 : Attempted to measure the speed of light using radioactive material and household film.
 
 ## Volunteer
