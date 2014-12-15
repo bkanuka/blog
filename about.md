@@ -32,16 +32,16 @@ In July 2014, Datavalet acquired BOLDstreet and I was one of 6 retained as an em
 
 BOLDstreet managed thousands of WiFi Hotspots for well-known companies in Canada. WiFi usage metrics were recorded in a SQL database. An average of 3.7 million records were added each day.
 
-  * Filed two patents regarding signal processing and estimating the location of a WiFi device using a single WiFi access point.
+  * Filed two patents regarding WiFi signal processing:
       * US20130167196 - System and method for remote device recognition at public hotspots
       * CA2823895 - System and method for wireless device detection, recognition and visit profiling
-  * Improved a frequent SQL query which scanned 100+ million rows to require only a single row lookup.
+  * Improved a frequent SQL query which scanned 100+ million rows to require a single row lookup.
   * Focused on improving the "additivity" of our most commonly used SQL queries. This allowed us to cache and reuse the results of previous queries (often making the difference between a taxing SQL query or a cache lookup).
-      * Time based queries were broken up into discrete timeslices and added using the Inclusion-Exclusion priciple.
-      * Implemented a statistical estimator (98% accurate) that allowed "unique count" queries to be added. E.g. the unique visitors to our hotspots for a week could be found by "summing" the unique visitors for each day.  This eliminated the need for costly `UNIQUE` SQL queries.
-  * Created a program to predict the movement of devices on our network (based on Page Rank).
+      * Time based queries were broken up and added using the Inclusion-Exclusion priciple.
+      * Implemented a statistical estimator (98% accurate) that allowed the results of `COUNT UNIQUE` queries to be added. This eliminated the need for many costly SQL queries.
+  * Created a program to predict the movement of devices on our network (based on PageRank).
   * Implemented an algorithm to isolate the periodicities in a set of sparse, noisy measurements. This was based on a modification of the Euclidean algorithm and Fourier transforms.
-  * Explored the use of Lagrangian Mechanics to predict the movement on statistical parameters over time - an unexplored topic of academic research.
+  * Explored the use of Lagrangian Mechanics to predict the movement of statistical parameters over time - a previously unexplored topic.
 
 ### **Researcher** - Queen's University and NSERC (April 2011 - September 2011)
 Co-authored a paper furthering understanding of the Laplace transform. Presented my findings at the Canadian Undergraduate Mathematics Conference at Universite Laval.
@@ -72,11 +72,11 @@ I have been using Linux since I was 9 years old and maintain a home server (VM's
 
 ## Volunteer
 
-I am currently working with a team at the University of Ottawa, in conjunction with Health Canada, to analyse the concentration of Calcium in urine. The goal is to develop a method of detecting the onset of osteoporosis.
+I am currently working with a team at the University of Ottawa, in conjunction with Health Canada, to analyse the concentration of radioactive Calcium in urine. The goal is to develop a method of detecting the onset of osteoporosis.
 
 ## Other Achievements
 
-  * National Gold medalist in sprint canoe, and a previous member of Team Ontario
+  * National Gold medalist in sprint canoe, and a previous member of Team Ontario.
   * Tested >99.9 percentile in Mathematics.
   * I've climbed some mountains:
 
