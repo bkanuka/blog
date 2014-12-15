@@ -38,7 +38,7 @@ BOLDstreet managed thousands of WiFi Hotspots for well-known companies in Canada
   * Improved a frequent SQL query which scanned 100+ million rows to require a single row lookup.
   * Focused on improving the "additivity" of our most commonly used SQL queries. This allowed us to cache and reuse the results of previous queries (often making the difference between a taxing SQL query and a cache lookup).
       * Time based queries were broken up and added using the Inclusion-Exclusion priciple.
-      * Implemented a statistical estimator (98% accurate) that allowed the results of `COUNT UNIQUE` queries to be added. This eliminated the need for many costly SQL queries.
+      * Implemented a statistical estimator (98% accurate) that allowed the results of `COUNT UNIQUE` queries to be added.
   * Created a program to predict the movement of devices on our network (based on PageRank).
   * Implemented an algorithm to isolate the periodicities in a set of sparse, noisy measurements. This was based on a modification of the Euclidean algorithm and Fourier transforms.
   * Explored the use of Lagrangian Mechanics to predict the movement of statistical parameters over time - a previously unexplored topic.
