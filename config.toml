@@ -1,0 +1,20 @@
+baseURL = "http://bkanuka.com/"
+languageCode = "en-us"
+title = "Practical Machine Learning"
+theme = "kiera"
+publishDir = "docs"
+copyright = "Copyright &copy; 2017 - Bennett Kanuka"
+canonifyurls = true
+pygmentsCodeFences = true
+disqusShortname = "bkanuka"
+
+[author]
+    name = "Bennett Kanuka"       #Author name
+    github = "bkanuka"     #Github username
+    linkedin = "bkanuka"   #LinkedIn username
+    twitter = "bkanuka"    #Twitter username
+
+[params]
+    tagline = "Guides in Machine Learning and Linux"
+    customCSS = ['css/custom.css']
+    keywords = "python,data science,machine learning, analytics, big data, bigdata, maths, shell, bash, awk, hadoop, spark, statistics, data analysis, data science, classification, regression, vowpal wabbit, spearmint, random forest"

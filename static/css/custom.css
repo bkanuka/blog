@@ -1,0 +1,6 @@
+.image, figure img, img {
+    max-width: 100%;
+    width: inherit;
+    display: block;
+    margin: auto;
+}
