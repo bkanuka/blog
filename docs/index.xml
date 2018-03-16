@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Practical Machine Learning</title>
+    <link>http://bkanuka.com/</link>
+    <description>Recent content on Practical Machine Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2017 - Bennett Kanuka</copyright>
+    <lastBuildDate>Thu, 28 Dec 2017 07:51:54 -0500</lastBuildDate>
+    
+	<atom:link href="http://bkanuka.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installing Windows 10 in KVM &#43; libvirt</title>
+      <link>http://bkanuka.com/posts/windows-10-libvirt/</link>
+      <pubDate>Thu, 28 Dec 2017 07:51:54 -0500</pubDate>
+      
+      <guid>http://bkanuka.com/posts/windows-10-libvirt/</guid>
+      <description>There&amp;rsquo;s a few &amp;ldquo;tricks&amp;rdquo; that are good to know when installing Windows 10 on kvm/libvirt. This is the way I install a Windows 10 VM and I&amp;rsquo;ll try to explain each step of the process. I&amp;rsquo;ll say right away that this may look like a very long post and therefore a long process, but the length is just images and this probably takes about 30 minutes if you chug through it!</description>
+    </item>
+    
+    <item>
+      <title>Windows VM Launcher</title>
+      <link>http://bkanuka.com/posts/windows-as-an-app/</link>
+      <pubDate>Mon, 25 Dec 2017 08:22:40 -0500</pubDate>
+      
+      <guid>http://bkanuka.com/posts/windows-as-an-app/</guid>
+      <description>Create ~/.local/share/applications/windows.desktop with the following content:
+[Desktop Entry] Version=1.0 Name=Windows 10 Comment=Starts the Windows 10 VM Exec=bash -c &#39;virsh start Windows10 &amp;amp;&amp;amp; virt-viewer --wait -c qemu:///system Windows10 &amp;amp;&amp;amp; virsh shutdown Windows10&#39; Icon=windows Type=Application  Under Exec change Windows10 to whatever you&amp;rsquo;ve named your VM. After logging out and back in, you will now have Windows 10 as an &amp;ldquo;application&amp;rdquo; that you can run from your launcher (Unity or Gnome Shell or whatever it is).</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://bkanuka.com/about/</link>
+      <pubDate>Sat, 23 Dec 2017 21:16:38 -0500</pubDate>
+      
+      <guid>http://bkanuka.com/about/</guid>
+      <description>This is Bennett Kanuka&amp;rsquo;s personal blog. I work for Lixar I.T. in Ottawa, Canada but any opinions or things I might write are strictly my own.
+At Lixar, I helped grow the data science group from 3 employees to over 20 data scientists, engineers, and visualization experts. I have worked in almost every sub-field of machine learning and AI.
+Sometimes I write about Linux, scripting languages, and other things I find interesting.</description>
+    </item>
+    
+  </channel>
+</rss>
