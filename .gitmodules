@@ -1,3 +1,3 @@
 [submodule "themes/kiera"]
 	path = themes/kiera
-	url = git@github.com:bkanuka/hugo-kiera.git
+	url = https://github.com/bkanuka/hugo-kiera.git
