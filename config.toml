@@ -6,6 +6,7 @@ copyright = "Copyright &copy; 2017 - Bennett Kanuka"
 canonifyurls = true
 pygmentsCodeFences = true
 disqusShortname = "bkanuka"
+publishDir = "bkanuka.github.io"
 
 [author]
     name = "Bennett Kanuka"       #Author name
