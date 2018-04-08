@@ -1,0 +1,6 @@
+[submodule "themes/kiera"]
+	path = themes/kiera
+	url = git@github.com:bkanuka/hugo-kiera.git
+[submodule "bkanuka.github.io"]
+	path = bkanuka.github.io
+	url = git@github.com:bkanuka/bkanuka.github.io.git
